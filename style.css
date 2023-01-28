@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+:root {
+    /* Fonts */
+    --header-font: 'Raleway', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    /* Primary */
+    --dark-blue: hwb(243 2% 78%);
+    --lavender: hwb(239 35% 46%);
+    /* Accent */
+    --bright-blue: hwb(224 19% 3%);
+    --cyan: hsl(170, 45%, 43%);
+    /* Neutral */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+}
+
+header .section-header-one {
+    width: 25%;
+}
+
+header .section-header-one a img {
+    width: 100%;
+    max-width: 200px;
+}
+
+header .section-header-two {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .section-header-two nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header section nav ul li {
+    margin-right: 10px;
+    font-size: .9rem;
+}
+
+header section nav ul li a {
+    color: var(--dark-blue);
+}
+
+/* MAIN */
+
+main {
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+/* ARTICLE ONE */
+
+.article-one, .article-two {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 140px;
+}
+
+.article-sec-one h1 {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+
+.article-sec-one p {
+    padding: 25px 20px;
+}
+
+.article-sec-one div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 3px;
+    max-width: 600px;
+    width: 100%;
+}
+
+input {
+    color: var(--dark-blue);
+    font-weight: 700;
+    border: 1px solid var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    color: var(--light-gray);
+    font-weight: 400;
+}
+
+button {
+    background-color: var(--bright-blue);
+    color: #FFF;
+    border: 1px solid var(--bright-blue);
+    font-weight: 700;
+}
+
+.article-sec-two {
+    width: 100%;
+    padding: 40px 0 55px;
+}
+
+.article-sec-two img {
+    width: 90%;
+}
+
+/* -- ###  ARTICLE TWO  ### -- */
+
+.article-two section:first-child {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-two h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.article-two p {
+    padding-bottom: 25px;
+    text-align: left;
+    color: var(--lavender);
+    width: 95%;
+}
+
+.article-two .fylo-works {
+    border-bottom: 1px solid var(--cyan);
+    padding: 5px 0;
+    color: var(--cyan);
+    font-size: .9rem;
+}
+
+.article-two a .arrow-icon {
+    margin-left: 10px;
+}
+
+.article-two section section {
+    margin-top: 50px;
+}
+
+blockquote {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 80%;
+    margin: 0 auto;
+}
+
+blockquote .quote-icon {
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+blockquote .quote-p {
+    font-size: .7rem;
+    color: var(--dark-blue);
+    line-height: 1.2rem;
+}
+
+blockquote + .testimonial {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonial .testimonial-photo {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.testimonial .testimonial-photo img {
+    width: 90%;
+    border-radius: 100px;
+}
+
+.testimonial .testimonial-name-profesion {
+    text-align: initial;
+    width: 50%;
+}
+
+.testimonial .testimonial-name-profesion span {
+    font-size: .8rem;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.testimonial .testimonial-name-profesion p {
+    font-size: .6rem;
+    padding-bottom: 0;
+}
+
+.article-two section img {
+    width: 80%;
+}
+
+/* -- ### ARTICLE THREE ### -- */
+
+.article-three {
+    width: 100%;
+    padding: 60px 40px;
+    background-color: var(--lavender);
+    color: var(--light-grayish-blue);
+}
+
+.article-three h3 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.article-three p {
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.article-three input, button {
+    width: 100%;
+}
+
+.article-three input {
+    border: 1px solid var(--lavender);
+}
+
+/* ### -- FOOTER -- ### */
+
+.footer {
+    background-color: var(--dark-blue);
+    padding: 60px 30px;
+}
+
+.footer div {
+    width: 30%;
+}
+
+.footer div img {
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+}
+
+.footer article {
+    padding-top: 40px;
+}
+
+.footer-sec-one {
+    width: 60%;
+}
+
+.footer-sec-one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-sec-one div {
+    width: 80%;
+}
+
+.footer-sec-one div img {
+    width: 80%;
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer ul {
+    margin-bottom: 40px;
+}
+
+.footer ul li a i {
+    margin-right: 15px;
+}
+
+.footer a {
+    color: var(--light-grayish-blue);
+}
+
+.footer-sec-one ul li {
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    list-style-type: none;
+}
+
+.footer-sec-two ul li {
+    margin-bottom: 10px;
+}
+
+.footer-sec-two div {
+    display: flex;
+}
+
+.social-media {
+    border: 1px solid var(--light-grayish-blue);
+    margin: 0 10px 0 0;
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+.facebook {
+    padding: 8px 14px;
+}
+
+
+@media (min-width: 767px) {
+    /*  ###   HEADER   ###   */
+    .section-header-two nav ul li {
+        margin-right: 30px;
+    }
+
+    .section-header-two nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* ###   MAIN   ### */
+    .article-one .article-sec-one, .article-two section:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-sec-one p, .article-two p, .article-two .fylo-works, .testimonial .testimonial-name-profesion span {
+        font-size: 1rem;
+    }
+
+    .article-sec-one div, .article-three section:first-child {
+        width: 80%;
+        align-self: center;
+    }
+
+    .article-sec-two img, .article-sec-two section img {
+        width: 80%;
+    }
+
+    .article-two section:first-child  {
+        width: 100%;
+        align-self: center;
+        max-width: 550px;
+    }
+
+    .article-two h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial .testimonial-name-profesion p {
+        font-size: .7rem;
+    }
+
+    .article-three div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-three div section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    /*  ###  FOOTER  ###  */
+    .footer article {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .footer-sec-one {
+        width: 40%;
+    }
+
+    .footer-sec-two {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-sec-two div {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    button {
+        cursor: pointer;
+    }
+
+    .article-one, .article-two {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 80px;
+    }
+
+    .article-sec-one {
+        text-align: start;
+    }
+
+    .article-sec-one h1, .article-two section h2  {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+
+    .article-sec-one p {
+        padding: 20px 0;
+    }
+
+    .article-sec-one div:nth-child(2) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    input, button  {
+        padding: 18px;
+    }
+
+    .article-sec-one div input  {
+        width: 65%;
+        margin-bottom: 0;
+    }
+
+    .article-sec-one div button {
+        width: 30%;
+    }
+
+    .article-sec-one div, .article-three section:first-child {
+        width: 100%;
+    }
+
+    /* ###  ARTICLE TWO  ### */
+    .article-two section:first-child {
+        padding: 0 20px;
+        max-width: none;
+        text-align: start;
+        width: auto;
+    }
+
+    .article-two p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .article-two .fylo-works {
+        font-size: 1.2rem;
+    }
+
+    blockquote {
+        margin-right: 215px;
+        width: 55%;
+    }
+
+    blockquote .quote-p {
+        font-size: .8rem;
+    }
+
+    blockquote, blockquote + .testimonial {
+        margin: 0;
+    }
+
+    .testimonial .testimonial-photo {
+        width: 8%;
+        margin-right: 10px;
+    }
+
+    .testimonial .testimonial-photo img {
+        width: 100%;
+    }
+
+    .testimonial .testimonial-name-profesion span {
+        font-size: .8rem;
+    }
+
+    .testimonial .testimonial-name-profesion p {
+        font-size: .6rem;
+    }
+
+    /* ###  ARTICLE THREE  ### */
+    .article-three {
+        padding: 80px;
+    }
+
+    .article-three div {
+        flex-direction: row;
+    }
+
+    .article-three div section:first-child, .article-three div section:nth-child(2) {
+        width: 50%;
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    .article-three h3 {
+        font-size: 2rem;
+    }
+
+    .article-three p {
+        width: 80%;
+        font-size: 1rem;
+        max-width: 500px;
+    }
+
+    .article-three input {
+        width: 90%;
+    }
+
+    .article-three button {
+        width: 40%;
+        font-size: .9rem;
+    }
+
+    button:hover {
+        background-color: hwb(224 30% 3% / 0.86);
+        color: var(--light-grayish-blue);
+    }
+
+    .article-two .fylo-works:hover {
+        color: hsla(170, 57%, 55%, 0.921);
+    } 
+
+    .social-media:hover, a:hover {
+        color: var(--bright-blue);
+        border-color: var(--bright-blue);
+    }
+}
+
+
+
